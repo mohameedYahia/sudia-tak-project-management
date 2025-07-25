@@ -1,0 +1,19 @@
+{
+  "name": "sudia-tak-project-management",
+  "version": "1.0.0",
+  "description": "Arabic Project Management Portal - Modern Implementation",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npm run build-css && python3 -m http.server 8000",
+    "build-css": "tailwindcss -i ./src/input.css -o ./assets/css/main.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./assets/css/main.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31"
+  },
+  "keywords": ["arabic", "project-management", "tailwind", "rtl"],
+  "author": "BLACKBOXAI",
+  "license": "MIT"
+}
