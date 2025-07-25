@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة إدارة المشاريع - تسجيل الدخول</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-gradient-to-br from-primary-50 to-primary-100 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-md">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <div class="w-20 h-20 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-white text-2xl font-bold">س</span>
+            </div>
+            <h1 class="text-2xl font-bold text-primary-800 mb-2">وزارة الداخلية</h1>
+            <h2 class="text-xl font-semibold text-primary-700 mb-1">المديرية العامة للسجون</h2>
+            <p class="text-primary-600">الشؤون الفنية - الدراسات والتصاميم</p>
+        </div>
+
+        <!-- Login Card -->
+        <div class="card animate-slide-up">
+            <div class="text-center mb-6">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">تسجيل الدخول</h3>
+                <p class="text-gray-600">تسجيل الدخول للوصول إلى حسابك</p>
+            </div>
+
+            <form id="loginForm" class="space-y-6">
+                <div>
+                    <label for="username" class="block text-sm font-medium text-gray-700 mb-2">
+                        اسم المستخدم أو البريد الإلكتروني
+                    </label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        required 
+                        class="input-field"
+                        placeholder="أدخل اسم المستخدم"
+                        autocomplete="username"
+                    >
+                </div>
+
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700 mb-2">
+                        كلمة المرور
+                    </label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        required 
+                        class="input-field"
+                        placeholder="أدخل كلمة المرور"
+                        autocomplete="current-password"
+                    >
+                </div>
+
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center">
+                        <input 
+                            type="checkbox" 
+                            id="rememberMe" 
+                            name="rememberMe" 
+                            class="h-4 w-4 text-primary-600 focus:ring-primary-500 border-gray-300 rounded"
+                        >
+                        <label for="rememberMe" class="mr-2 block text-sm text-gray-700">
+                            تذكرني
+                        </label>
+                    </div>
+                    <a href="#" class="text-sm text-primary-600 hover:text-primary-500">
+                        هل نسيت كلمة السر؟
+                    </a>
+                </div>
+
+                <button type="submit" class="btn-primary w-full">
+                    تسجيل الدخول
+                </button>
+            </form>
+
+            <!-- Demo Credentials -->
+            <div class="mt-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                <p class="text-sm text-blue-800 font-medium mb-2">بيانات تجريبية:</p>
+                <p class="text-sm text-blue-700">اسم المستخدم: <code class="bg-blue-100 px-1 rounded">admin</code></p>
+                <p class="text-sm text-blue-700">كلمة المرور: <code class="bg-blue-100 px-1 rounded">12</code></p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-8">
+            <p class="text-sm text-primary-600">
+                © 2024 وزارة الداخلية - المديرية العامة للسجون
+            </p>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
